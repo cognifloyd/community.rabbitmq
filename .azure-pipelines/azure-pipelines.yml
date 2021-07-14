@@ -38,7 +38,8 @@ resources:
     - container: default
       image: quay.io/ansible/azure-pipelines-test-container:1.9.0
 
-pool: Standard
+pool: #Standard
+  vmImage: ubuntu-latest
 
 stages:
 ### Sanity & units
